@@ -1,0 +1,190 @@
+.text-fx-shortcodes-premium-settings p {
+	margin-left: 1em;
+}
+
+.text-fx-shortcodes-premium-fx-marquee {
+	display: inline-block;
+	width: 100%;
+	min-width: 360px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.text-fx-shortcodes-premium-marquee span.inner-marquee {
+    display: inline-block;
+    padding-left: 85%;
+    animation: text-fx-shortcodes-premium-marquee 15s linear infinite;
+	white-space: nowrap;
+}
+
+.text-fx-shortcodes-premium-marquee span.inner-marquee:hover {
+    animation-play-state: paused
+}
+
+@keyframes text-fx-shortcodes-premium-marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-85%, 0); }
+} 
+
+.text-fx-shortcodes-premium-blink {
+  animation: text-fx-shortcodes-premium-blink 1s linear infinite;
+}
+
+@keyframes text-fx-shortcodes-premium-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+span.text-fx-shortcodes-premium-code {
+	display: inline;
+	unicode-bidi: embed;
+	font-family: monospace;
+	white-space: pre;
+}
+
+.text-fx-shortcodes-premium-instructions {
+	background: #fff;
+	margin-left: 1em;
+	width: 77%;
+	border: 1px dashed #ccc;
+	border-radius: 4px;
+}
+
+.text-fx-shortcodes-premium-instructions table td,
+.text-fx-shortcodes-premium-instructions table th {
+	padding: 1em;
+	text-align: left;	
+}
+
+.text-fx-shortcodes-premium-instructions .wide {
+	width: 256px;
+}
+
+.text-fx-shortcodes-premium-rainbow {
+	-webkit-animation: text-fx-shortcodes-premium-rainbow 3s infinite; 
+	-ms-animation: text-fx-shortcodes-premium-rainbow 3s infinite;
+	animation: text-fx-shortcodes-premium-rainbow 3s infinite; 
+}
+
+.text-fx-shortcodes-premium-zoom {
+	
+}
+
+.fx-char-crazy {
+	display: inline-block;
+}
+
+.text-fx-shortcodes-premium-pulsate {
+	display: inline-block;
+	-webkit-animation: text-fx-shortcodes-premium-pulsate 1s infinite; 
+	-ms-animation: text-fx-shortcodes-premium-pulsate 1s infinite;
+	animation: text-fx-shortcodes-premium-pulsate 1s infinite; 	
+}
+
+.text-fx-shortcodes-premium-spell,
+.text-fx-shortcodes-premium-rotate {
+	display: inline-block;
+}
+
+.fx-char-rotate {
+	display: inline-block;
+	letter-spacing: 2px;
+}
+
+.fx-char-zoom {
+	display: inline-block;
+	letter-spacing: 4px;
+}
+
+.fx-char {
+	position: relative;
+	display: inline-block;
+}
+
+.fx-char-spin {
+	display: inline-block;
+	animation-name: spin;
+	animation-duration: 2000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+}
+
+.fx-char-spell {
+	letter-spacing: 5px;
+}
+
+.fx-char-wave,
+.fx-char-spell,
+.fx-char-zoom {
+	display: inline-block;
+}
+
+@keyframes text-fx-shortcodes-premium-pulsate {
+    0% {
+        transform:scale(1);
+    }
+
+    50% {
+        transform:scale(1.2);
+    }
+	
+	100% {
+        transform:scale(1);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform:rotateY(0deg);
+    }
+
+    to {
+        transform:rotateY(360deg);
+    }
+}
+
+@keyframes text-fx-shortcodes-premium-rotatez {
+    from {
+      -moz-transform: rotateZ(5deg);
+      -ms-transform: rotateZ(5deg);
+      transform: rotateZ(5deg);
+    }
+    to {
+      -moz-transform: rotateZ(-5deg);
+      -ms-transform: rotateZ(-5deg);
+      transform: rotateZ(-5deg);
+    }
+  }
+
+@-webkit-keyframes text-fx-shortcodes-premium-rainbow {
+	0%{color: orange;}	
+	10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+@-ms-keyframes text-fx-shortcodes-premium-rainbow {
+	0%{color: orange;}	
+	10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+@keyframes text-fx-shortcodes-premium-rainbow {
+	0%{color: orange;}	
+	10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
